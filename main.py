@@ -12,6 +12,7 @@ def hello_admin():
 
 @app.route('/guest/<guest>')
 def hello_guest(guest):
+    print(guest)
     return 'Hello %s as Guest' % guest
 
 @app.route('/user/<name>')
